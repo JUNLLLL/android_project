@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:text="底部导航栏是clipChildren效果"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="72dp"
+        android:clipChildren="false"/>
+
+    <!--  ViewPager外层控件以及ViewPager 都设置了android:clipChildren="false"
+         是否让其子View显示在父View之内，默认为ture，它就会显示在父容器里。设为false则会显示到父容器之外。
+         例如，我们给ViewPager设置了margin，这会使它缩进在屏幕内。可以发现ViewPager也有android:clipChildren这个属性。
+         这就说明ViewPager里的子View也能够超出父容器的限制显示在父容器之外了-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <!--根节点添加clipChildren,添加layout_gravity为bottom表示控件大小超出后控件底部对齐-->
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_round"/>
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_launcher_round"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
