@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/normal_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:text="直角矩形"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/normal_rectangle"/>
+
+    <TextView
+        android:id="@+id/rounded_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:text="圆角矩形"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/rounded_rectangle"/>
+
+    <TextView
+        android:id="@+id/padding_rounded_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:text="内间距矩形"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/padding_rounded_rectangle"/>
+
+    <TextView
+        android:id="@+id/half_arc_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:text="半圆角矩形"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/half_arc_rectangle"/>
+
+    <TextView
+        android:id="@+id/stroke_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:text="描边矩形"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/stroke_rectangle"/>
+
+    <TextView
+        android:id="@+id/dash_stroke_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:text="虚线描边矩形"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/dash_stroke_rectangle"/>
+
+    <TextView
+        android:id="@+id/gradient_rectangle"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="40dp"
+        android:layout_width="300dp"
+        android:text="渐变矩形"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/gradient_rectangle"/>
+
+    <TextView
+        android:id="@+id/normal_oval"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:text="圆形"
+        android:textSize="30dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/normal_oval"/>
+
+     <View
+        android:id="@+id/normal_line"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_height="10dp"
+        android:layout_width="300dp"
+        android:background="@drawable/normal_line"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/normal_ring"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:layout_marginLeft="50dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/normal_ring"/>
+
+        <TextView
+            android:id="@+id/gradient_ring"
+            android:layout_marginLeft="10dp"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/gradient_ring"/>
+
+        <TextView
+            android:id="@+id/stroke_ring"
+            android:layout_marginLeft="10dp"
+            android:layout_height="100dp"
+            android:layout_width="100dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/stroke_ring"/>
+    </LinearLayout>
+</LinearLayout>

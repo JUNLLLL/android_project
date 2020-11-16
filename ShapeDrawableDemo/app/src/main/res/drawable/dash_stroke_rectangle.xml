@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--定义纯色/填充颜色-->
+    <solid android:color="@color/colorPrimary"></solid>
+    <!--定义某个方向的圆角度数-->
+    <corners   android:topLeftRadius="20dp"  android:topRightRadius="20dp" />
+    <!--定义描边宽度和颜色，添加虚线间距-->
+    <stroke android:width="3dp"   android:color="@color/colorAccent"
+            android:dashGap="1dp"    android:dashWidth="4dp"></stroke>
+</shape>
+
